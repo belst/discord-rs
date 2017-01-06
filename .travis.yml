@@ -6,6 +6,10 @@ rust:
   - beta
   - nightly
 
+script:
+  - cargo build --verbose
+  - cargo test --verbose --all-features -- --ignored
+
 #matrix:
 #  allow_failures:
 #  - rust: beta
